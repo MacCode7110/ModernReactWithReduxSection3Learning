@@ -4,9 +4,9 @@ function App() {
     return (
         <div>
             <div>Personal Digital Assistance</div>
-            <ProfileCard />
-            <ProfileCard />
-            <ProfileCard />
+            <ProfileCard title = 'Alexa' handle = '@Alexa99'/>
+            <ProfileCard title = 'Cortana' handle = '@Cortana32'/>
+            <ProfileCard title = 'Siri' handle = '@Siri01'/>
         </div>
     );
 }
