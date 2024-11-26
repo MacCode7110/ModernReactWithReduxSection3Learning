@@ -6,16 +6,19 @@ import SiriImage from './images/siri.png';
 console.log(AlexaImage);
 console.log(SiriImage);
 
+/*
+<img src={AlexaImage} />
+<img src={CortanaImage} />
+<img src={SiriImage}/>
+*/
+
 function App() {
     return (
         <div>
             <div>Personal Digital Assistance</div>
-            <img src={AlexaImage} />
-            <img src={CortanaImage} />
-            <img src={SiriImage}/>
-            <ProfileCard title = 'Alexa' handle = '@Alexa99'/>
-            <ProfileCard title = 'Cortana' handle = '@Cortana32'/>
-            <ProfileCard title = 'Siri' handle = '@Siri01'/>
+            <ProfileCard title = 'Alexa' handle = '@Alexa99' image={AlexaImage}/>
+            <ProfileCard title = 'Cortana' handle = '@Cortana32' image={CortanaImage}/>
+            <ProfileCard title = 'Siri' handle = '@Siri01' image={SiriImage}/>
         </div>
     );
 }
