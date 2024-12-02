@@ -1,6 +1,6 @@
 function ProfileCard(props) {
     // Object destructuring:
-    const { title , handle , image } = props;
+    const { title , handle , image , description } = props;
     return (
         <div className="card">
             <div className="card-image">
@@ -12,6 +12,9 @@ function ProfileCard(props) {
                 <div className="media-content">
                     <div className="title is-4">{title}</div>
                     <div className="subtitle is-6">{handle}</div>
+                </div>
+                <div className="content">
+                    {description}
                 </div>
             </div>
         </div>);
